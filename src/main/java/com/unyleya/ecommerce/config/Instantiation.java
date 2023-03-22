@@ -17,9 +17,9 @@ public class Instantiation implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         useRepository.deleteAll();
-        Produto maria = new Produto(null, "Maria", "23");
-        Produto maa = new Produto(null, "Mria", "23");
-        Produto ma = new Produto(null, "Maia", "23");
+        Produto maria = new Produto(null, "Mangueira", "23,00");
+        Produto maa = new Produto(null, "Torneira", "25,00");
+        Produto ma = new Produto(null, "Garrafa Termica", "50,00");
         useRepository.saveAll( Arrays.asList(ma,maria,maa));
     }
 
